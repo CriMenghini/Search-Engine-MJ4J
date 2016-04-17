@@ -1,4 +1,4 @@
-# Search-Engine-MJ4J
+# Search-Engine-MG4J (16-19 April 2016)
 
 Configure a search engine on two particular collections of documents that consist of:
 
