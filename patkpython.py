@@ -77,12 +77,16 @@ k = [1,3,5,10]
 
 query_dic = create_query_dict(query_result).dic_query_result()
 relevant_query = create_query_dict(ground_truth).dic_query_result()
+
 # Define the list of queries
 queries = relevant_query.keys()
+
 # Compute the precision of each query
 precision_k = precision_at_k(k)
+
 # COmpute the averege precision of the queries
 average_precision = {K : np.array((precision_k[K].values())).mean() for K in k}
+
 # Store the variable average_precision in a file.
 pickle.dump( average_precision, open(str(ct)+'_DATASET/'+str(ct)+'_'+str(stem)+'/'+str(ct)+'_'+str(scor)+'avg_'+str(stem)+'_'+str(scor)+'.p', 'wb')) # Store the variable average_precision in a file.
 
