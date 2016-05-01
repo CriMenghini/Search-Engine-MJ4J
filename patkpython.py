@@ -42,7 +42,7 @@ class create_query_dict(object):
         return(dic)
 
 def precision_at_k(k_list):
-    """This function returns the precision of each query respect to a fixed K. Precisely it gives back a dictionary
+    """This function returns the precision of the search engine respect to a fixed K. Precisely it gives back a dictionary
     {key = k : value = precision}.
     - k_list : is the list of k's for which I want to compute the precision."""
     precision = {}
